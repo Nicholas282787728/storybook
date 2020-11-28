@@ -290,6 +290,22 @@ div.highlight pre {
     transition: none;
     -webkit-appearance: none;
 }
+.widget-search__form .widget-search__submit {
+    display: none;
+}
+input[type="submit"], input[type="reset"] {
+    display: inline-block;
+    min-width: 150px;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #2a2a2a;
+    border: 0;
+    transition: all .1s linear;
+    -webkit-appearance: none;
+}
 .btn {
     display: inline-block;
     font-weight: 400;
