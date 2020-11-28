@@ -132,4 +132,9 @@
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
   </url>
   
+  <url>
+    <loc>https://storybook.pix.fr/search/</loc>
+    <priority>0.1</priority>
+  </url>
+  
 </urlset>

@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#000" />
     <title>
         
-            Mod Apk &middot; StoryBook
+            Search Results &middot; StoryBook
         
     </title>
 
@@ -120,47 +120,137 @@
     </div>
 </div>
 <div class="pure-g">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="https://storybook.pix.fr/js/search.js"></script>
+<div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
+<main class="main list" role="main">
+	<header class="main__header">
+    <h1 class="main__title">Search Results  <span class="list__lead post__lead" id="search-string"></span></h1>
+   
+	</header>
+  <div id="search-results">
+  </div>
+</main>
 
-<div class="pure-u-1">
-    <h1 style="text-align: center">~ Mod apk ~</h1>
-</div>
-<div class="pure-g">
-    
-    
-    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3" style="display:flex">
-        <div class="list">
-            
-            <a href="https://storybook.pix.fr/posts/driving-school-2016-mod/" title="Driving School 2016 (MOD, Unlimited Money) Apk Free Download For Android">
-                <img src="/img/feature/driving-school-mod.png" class="pure-img" alt="Driving School 2016 (MOD, Unlimited Money) Apk Free Download For Android">
-            </a>
-            
-            <time>Nov 28 2020</time>
-            <div class="pad">
-                <h3><a href="https://storybook.pix.fr/posts/driving-school-2016-mod/">Driving School 2016 (MOD, Unlimited Money) Apk Free Download For Android</a></h3>
-                <p>Driving School 2016 (MOD, Unlimited Money) - You can download this Mod free</p>
-            </div>
-        </div>
+      <script id="search-result-template" type="text/x-js-template">
+	  <div class="pad">
+	    <article>
+    <div id="summary-${key}">
+      <h2><a href="${link}">${title}</a></h2>
+      <p>${snippet}</p>
+      ${ isset tags }<p>Tags: ${tags}</p>${ end }
+      ${ isset categories }<p>Categories: ${categories}</p>${ end }
     </div>
-    
-    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3" style="display:flex">
-        <div class="list">
-            
-            <a href="https://storybook.pix.fr/posts/tv-empire-tycoon/" title="TV Empire Tycoon (MOD, Unlimited Money) Free Download">
-                <img src="/img/feature/tv-mmpire-tycoon.jpg" class="pure-img" alt="TV Empire Tycoon (MOD, Unlimited Money) Free Download">
-            </a>
-            
-            <time>Nov 28 2020</time>
-            <div class="pad">
-                <h3><a href="https://storybook.pix.fr/posts/tv-empire-tycoon/">TV Empire Tycoon (MOD, Unlimited Money) Free Download</a></h3>
-                <p>TV Empire Tycoon (MOD, Unlimited Money) Download for free</p>
-            </div>
-        </div>
+	</article>
     </div>
-    
+</script>
     
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+<div id="sidebar" class="pure-u-1 pure-u-md-1-4 pure-u-sm-1">
+    <div class="pad">
+	<div class="widget-search widget"><form class="widget-search__form" role="search" method="get" action="/search"><label><input class="widget-search__field" type="search" placeholder="SEARCH..." name="s" aria-label="SEARCH..."></label>
+<input class="widget-search__submit" type="submit" value="Search"></form></div>
+        <a name="about"></a>
+        <h3>About Me</h3>
+        <div style="text-align: center;">
+            <img src="/img/author.png" alt="StoryBook" class="pure-img" />
+            <p><em>News, Review Product, Book, Mod Apk, Games, Music, Mp3 Songs Download For Free</em></p>
+        </div>
+
+        <h3>Latest Articles</h3>
+        <div class="pure-menu pure-menu-open">
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="https://storybook.pix.fr/posts/driving-school-2016-mod/" class="pure-menu-link">Driving School 2016 (MOD, Unlimited Money) Apk Free Download For Android<br>
+                        <small>Driving School 2016 (MOD, Unlimited Money) - You can download this Mod free</small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="https://storybook.pix.fr/posts/tv-empire-tycoon/" class="pure-menu-link">TV Empire Tycoon (MOD, Unlimited Money) Free Download<br>
+                        <small>TV Empire Tycoon (MOD, Unlimited Money) Download for free</small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="https://storybook.pix.fr/posts/first-kiss-yo-yo-honey-singh-featuring-ipsitaa/" class="pure-menu-link">First Kiss - Yo Yo Honey Singh featuring Ipsitaa MP3 &amp; MP4 Free Download<br>
+                        <small>Yo Yo Honey Singh New Songs 2020. First Kiss - Yo Yo Honey Singh featuring Ipsitaa MP3 &amp; MP4 Song Free Download</small>
+                    </a>
+                </li>
+                
+                <li class="pure-menu-item">
+                    <a href="https://storybook.pix.fr/posts/pamma-jatt-korala-maan-ft-gurlez-akhtar/" class="pure-menu-link">Pamma Jatt - Korala Maan ft. Gurlez Akhtar MP3 &amp; MP4 Free Download<br>
+                        <small>New Punjabi Songs 2020 Pamma Jatt by Korala Maan ft. Gurlez Akhtar MP3 &amp; MP4 Free Download</small>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <h3>Categories</h3>
+        <div style="text-align:center" class="tags">
+            
+            
+            <a href="/tags/apk" class="pure-button"> apk
+                <small>(2)</small></a>
+            
+            
+            
+            <a href="/tags/mod-apk" class="pure-button"> mod-apk
+                <small>(2)</small></a>
+            
+            
+            
+            <a href="/tags/mp3" class="pure-button"> mp3
+                <small>(2)</small></a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div> 
+</div> 
 
                 
             </div><div class="pure-g">
